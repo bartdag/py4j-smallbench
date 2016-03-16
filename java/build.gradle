@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+sourceCompatibility = 1.7
+version = '1.0'
+group = 'py4j-small-bench'
+mainClassName = "org.py4j.smallbench.SmallBenchApplication"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'net.sf.py4j', name: 'py4j', version: '0.9.2'
+}
